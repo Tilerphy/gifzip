@@ -2,6 +2,7 @@
 ## Sample:
 
 ```
+//you can also npm install gifzip and  then require("gifzip")
 var util = require("./index");
 
 //select a gif to unpack, the first argument could be filename or url
