@@ -12,3 +12,4 @@ util.unpack("./some.gif", 160, 120, (folder,w,h)=>{ //select a gif to unpack
                         exec("rm -rf "+__dirname+"/"+folder);
                 });
 ```
+
