@@ -3,7 +3,9 @@
 
 ```
 var util = require("./index");
-util.unpack("./some.gif", 160, 120, (folder,w,h)=>{ //select a gif to unpack
+
+//select a gif to unpack, the first argument could be filename or url
+util.unpack("./some.gif", 160, 120, (folder,w,h)=>{ 
                         //after unpacked.
                         //pack the gif back with frame: 60 and the origin width/height.
                         //write the gif to any stream: express response or fs.createWriteStream(filename)
