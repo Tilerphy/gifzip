@@ -15,6 +15,10 @@ function X2(filename,w=160,h=120,s=0, callback=null){
 		var ps = [];
 		for(var d of data){
 			console.log(counter);
+			if(counter%s!=0){
+				counter++;
+				continue;
+			}
 			var p = new Promise((resolve,reject)=>{
 				var stream = fs.createWriteStream(__dirname+"/"+foldername+"/"+counter+".jpg");
 				stream.on("finish",()=>{
@@ -27,7 +31,7 @@ function X2(filename,w=160,h=120,s=0, callback=null){
                         	.pipe(stream);
 			});
 			ps[ps.length]=p;
-			counter+=s;
+			counter++;
 			
 		}
 		Promise.all(ps).then(()=>{
