@@ -7,7 +7,7 @@ var canvas  = require("canvas");
 var image = canvas.Image;
 var gf = require("gif-frames");
 var uuid=require("uuid");
-function X2(filename,w=160,h=120, callback=null){
+function X2(filename,w=160,h=120,s=0, callback=null){
 	var foldername = uuid();
 	gf({url:filename, frames:"all",  outputType: 'jpeg', cumulative: true}).then((data)=>{
 		var counter = 0;
@@ -27,7 +27,7 @@ function X2(filename,w=160,h=120, callback=null){
                         	.pipe(stream);
 			});
 			ps[ps.length]=p;
-			counter++;
+			counter+=s;
 			
 		}
 		Promise.all(ps).then(()=>{

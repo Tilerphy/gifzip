@@ -1,17 +1,28 @@
 {
   "name": "gifzip",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Change the gif frame rate and size.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tilerphy",
+  "license": "MIT",
   "dependencies": {
     "canvas": "^1.6.10",
     "gif-frames": "^0.4.0",
     "gifencoder": "^1.1.0",
     "gm": "^1.23.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tilerphy/gifzip.git"
+  },
+  "keywords": [
+    "gif"
+  ],
+  "bugs": {
+    "url": "https://github.com/Tilerphy/gifzip/issues"
+  },
+  "homepage": "https://github.com/Tilerphy/gifzip#readme"
 }
