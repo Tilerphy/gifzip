@@ -10,11 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "canvas": "^1.6.10",
-    "canvas-prebuilt": "^1.6.5-prerelease.1",
-    "express": "^4.16.3",
     "gif-frames": "^0.4.0",
     "gifencoder": "^1.1.0",
-    "gm": "^1.23.1",
-    "tagg": "^1.1.0"
+    "gm": "^1.23.1"
   }
 }
